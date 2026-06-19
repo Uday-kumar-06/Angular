@@ -9,4 +9,18 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('tut_events');
+
+  handleEvent(event:Event){
+    console.log('Function called');
+    console.log('Event type:', event.type);
+    // console.log('Event target:', event.target);
+  }
+
+  handleInputEvent(event:Event){
+    
+  }
+
+  handleButtonEvent(event:Event){
+    
+  }
 }
